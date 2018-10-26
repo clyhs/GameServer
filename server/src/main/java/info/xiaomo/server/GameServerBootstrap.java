@@ -23,13 +23,13 @@ import org.slf4j.LoggerFactory;
  * Copyright(©) 2015 by xiaomo.
  **/
 
-@ConfigFileScan(value = "D:/eclipse64/workspace/GameServer/configData", suffix = ".xlsx")
+@ConfigFileScan(value = "D:/eclipse64/workspace/game/GameServer/configData", suffix = ".xlsx")
 @PackageScan("info.xiaomo.server.config.beans")
 public class GameServerBootstrap {
     public static final Logger LOGGER = LoggerFactory.getLogger(GameServerBootstrap.class);
 
     public static void main(String[] args) throws Exception {
-        String configPath = "D:/eclipse64/workspace/GameServer/conf/config.properties";
+        String configPath = "D:/eclipse64/workspace/game/GameServer/conf/config.properties";
         if (args.length > 0) {
             configPath = args[0];
         }
