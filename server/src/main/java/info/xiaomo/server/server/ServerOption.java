@@ -126,4 +126,166 @@ public class ServerOption {
         }
     }
 
+	public int getServerId() {
+		return serverId;
+	}
+
+	public void setServerId(int serverId) {
+		this.serverId = serverId;
+	}
+
+	public int getServerType() {
+		return serverType;
+	}
+
+	public void setServerType(int serverType) {
+		this.serverType = serverType;
+	}
+
+	public int getGameServerPort() {
+		return gameServerPort;
+	}
+
+	public void setGameServerPort(int gameServerPort) {
+		this.gameServerPort = gameServerPort;
+	}
+
+	public String getConfigDataPath() {
+		return configDataPath;
+	}
+
+	public void setConfigDataPath(String configDataPath) {
+		this.configDataPath = configDataPath;
+	}
+
+	public String getGameDbConfigPath() {
+		return gameDbConfigPath;
+	}
+
+	public void setGameDbConfigPath(String gameDbConfigPath) {
+		this.gameDbConfigPath = gameDbConfigPath;
+	}
+
+	public String getConfigPath() {
+		return configPath;
+	}
+
+	public void setConfigPath(String configPath) {
+		this.configPath = configPath;
+	}
+
+	public boolean isDebug() {
+		return isDebug;
+	}
+
+	public void setDebug(boolean isDebug) {
+		this.isDebug = isDebug;
+	}
+
+	public boolean isFcmCheck() {
+		return fcmCheck;
+	}
+
+	public void setFcmCheck(boolean fcmCheck) {
+		this.fcmCheck = fcmCheck;
+	}
+
+	public boolean isWgCheck() {
+		return wgCheck;
+	}
+
+	public void setWgCheck(boolean wgCheck) {
+		this.wgCheck = wgCheck;
+	}
+
+	public boolean isPushChat() {
+		return pushChat;
+	}
+
+	public void setPushChat(boolean pushChat) {
+		this.pushChat = pushChat;
+	}
+
+	public boolean isPushRole() {
+		return pushRole;
+	}
+
+	public void setPushRole(boolean pushRole) {
+		this.pushRole = pushRole;
+	}
+
+	public int getPlatformId() {
+		return platformId;
+	}
+
+	public void setPlatformId(int platformId) {
+		this.platformId = platformId;
+	}
+
+	public int getBackServerPort() {
+		return backServerPort;
+	}
+
+	public void setBackServerPort(int backServerPort) {
+		this.backServerPort = backServerPort;
+	}
+
+	public int getHttpServerPort() {
+		return httpServerPort;
+	}
+
+	public void setHttpServerPort(int httpServerPort) {
+		this.httpServerPort = httpServerPort;
+	}
+
+	public String getDesKey() {
+		return desKey;
+	}
+
+	public void setDesKey(String desKey) {
+		this.desKey = desKey;
+	}
+
+	public Date getOpenTime() {
+		return openTime;
+	}
+
+	public void setOpenTime(Date openTime) {
+		this.openTime = openTime;
+	}
+
+	public Date getCombineTime() {
+		return combineTime;
+	}
+
+	public void setCombineTime(Date combineTime) {
+		this.combineTime = combineTime;
+	}
+
+	public String getLogDBConfigPath() {
+		return logDBConfigPath;
+	}
+
+	public void setLogDBConfigPath(String logDBConfigPath) {
+		this.logDBConfigPath = logDBConfigPath;
+	}
+
+	public String getHttpDBConfigPath() {
+		return httpDBConfigPath;
+	}
+
+	public void setHttpDBConfigPath(String httpDBConfigPath) {
+		this.httpDBConfigPath = httpDBConfigPath;
+	}
+
+	public String getSpringConfigFile() {
+		return springConfigFile;
+	}
+
+	public void setSpringConfigFile(String springConfigFile) {
+		this.springConfigFile = springConfigFile;
+	}
+    
+    
+
 }

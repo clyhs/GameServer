@@ -10,12 +10,17 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @author xiaomo
  */
 @Slf4j
 @Data
 public class Session {
+	
+	private static final Logger log = LoggerFactory.getLogger(Session.class);
 
     private Channel channel;
 
@@ -98,4 +103,34 @@ public class Session {
     public void sendMessage(AbstractMessage msg) {
         channel.writeAndFlush(msg);
     }
+
+	public int getSendDelay() {
+		return sendDelay;
+	}
+
+	public void setSendDelay(int sendDelay) {
+		this.sendDelay = sendDelay;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+
+	public boolean isOffline() {
+		return offline;
+	}
+
+	public void setOffline(boolean offline) {
+		this.offline = offline;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+    
+    
 }

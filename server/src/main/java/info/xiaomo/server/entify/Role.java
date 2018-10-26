@@ -69,4 +69,36 @@ public class Role implements Persistable {
         this.id = id;
     }
 
+	public int getMapId() {
+		return mapId;
+	}
+
+	public void setMapId(int mapId) {
+		this.mapId = mapId;
+	}
+
+	public int getLine() {
+		return line;
+	}
+
+	public void setLine(int line) {
+		this.line = line;
+	}
+
+	public int getServerId() {
+		return serverId;
+	}
+
+	public void setServerId(int serverId) {
+		this.serverId = serverId;
+	}
+
+	public int getName() {
+		return name;
+	}
+
+	public void setName(int name) {
+		this.name = name;
+	}
+
 }

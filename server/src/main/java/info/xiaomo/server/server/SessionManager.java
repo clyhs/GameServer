@@ -8,12 +8,17 @@ import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  *
  * @author qq
  */
 @Slf4j
 public class SessionManager {
+	
+	private static final Logger log = LoggerFactory.getLogger(SessionManager.class);
 
     private static final SessionManager INSTANCE = new SessionManager();
 

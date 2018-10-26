@@ -1,5 +1,8 @@
 package info.xiaomo.server.system.user;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import info.xiaomo.server.db.DataCenter;
 import info.xiaomo.server.db.DataType;
 import info.xiaomo.server.entify.User;
@@ -29,6 +32,9 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class UserManager {
+	
+	private static final Logger log = LoggerFactory.getLogger(UserManager.class);
+	
     private static UserManager ourInstance = new UserManager();
 
     public static UserManager getInstance() {

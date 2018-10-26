@@ -74,4 +74,54 @@ public class User implements Persistable {
         this.id = id;
     }
 
+	public int getGmLevel() {
+		return gmLevel;
+	}
+
+	public void setGmLevel(int gmLevel) {
+		this.gmLevel = gmLevel;
+	}
+
+	public String getLoginName() {
+		return loginName;
+	}
+
+	public void setLoginName(String loginName) {
+		this.loginName = loginName;
+	}
+
+	public int getServerId() {
+		return serverId;
+	}
+
+	public void setServerId(int serverId) {
+		this.serverId = serverId;
+	}
+
+	public int getPlatformId() {
+		return platformId;
+	}
+
+	public void setPlatformId(int platformId) {
+		this.platformId = platformId;
+	}
+
+	public String getIdNumber() {
+		return idNumber;
+	}
+
+	public void setIdNumber(String idNumber) {
+		this.idNumber = idNumber;
+	}
+
+	public int getRegisterTime() {
+		return registerTime;
+	}
+
+	public void setRegisterTime(int registerTime) {
+		this.registerTime = registerTime;
+	}
+    
+    
+
 }

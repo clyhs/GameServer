@@ -2,6 +2,8 @@ package info.xiaomo.server.command;
 
 import info.xiaomo.core.base.common.AttributeUtil;
 import info.xiaomo.core.base.concurrent.command.AbstractCommand;
+import info.xiaomo.core.base.concurrent.command.IQueueDriverCommand;
+import info.xiaomo.core.base.concurrent.queue.ICommandQueue;
 import info.xiaomo.server.server.Session;
 import info.xiaomo.server.server.SessionKey;
 import info.xiaomo.server.system.user.UserManager;
@@ -36,6 +38,34 @@ public class LogoutCommand extends AbstractCommand {
 		//登出
 		UserManager.getInstance().logout(session);
 		LOGGER.error("网络连接断开，处理玩家下线逻辑->{}", session.getUser().toString());
+	}
+
+
+	@Override
+	public int getQueueId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public void setQueueId(int queueId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public ICommandQueue<IQueueDriverCommand> getCommandQueue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public void setCommandQueue(ICommandQueue<IQueueDriverCommand> commandQueue) {
+		// TODO Auto-generated method stub
+		
 	}
 
 
